@@ -1,3 +1,48 @@
-.Image {
-    align-items: center;
+/*The animation*/
+@keyframes picture {
+    0%   {border: 9px solid rgb(5 10 230);
+         background-color:rgb(131 58 180);
+         filter: saturate(5);
+         border-radius: 6%;
+        }
+    25%  {border: 9px solid rgb(193 53 132);
+        background-color:rgb(247 119 55);
+        filter: saturate(10);
+        border-radius: 10%;
+          }
+    50%  {
+        background-color: transparent;
+        filter: grayscale(3%);
+    }
+
+
+100% { border: 5px dotted rgb(92, 18, 60);
+
 }
+
+}
+
+
+
+/*The image*/
+div {
+   padding-left: 10px;
+   padding-top: 10px;
+   background-color:rgb(88 81 216);
+   border-radius: 2%;
+   max-width: 109px; 
+   height: 160px;
+   
+   
+
+}
+
+div:hover {
+   animation-name: picture;
+   animation-iteration-count: infinite;
+   animation-duration: 4s;
+   animation-direction: inherit;
+   background-color: transparent;
+}
+
+
